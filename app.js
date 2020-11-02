@@ -125,7 +125,7 @@ app.post("/submit", function(req, res){
         if (foundUser) {
             foundUser.secret = submittedSecret;
             foundUser.save(function(){
-              res.rediect("/secrets");
+              res.redirect("/secrets");
             });
           }
         }
